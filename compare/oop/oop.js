@@ -22,7 +22,7 @@ function Circle(name){
 
 
 // simple inherit
-Circle.prototype = new Shape();
+Circle.prototype = Object.create(Shape.prototype);
 Circle.prototype.constructor = Circle;
 Circle.parent = Shape.prototype;
 
@@ -38,12 +38,12 @@ console.log(circle.getArea());
 
 
 /*
-Better way to inherit
-function inherit(obj){
-	function Temp(){}
-	Temp.prototype = obj;
-	return new Temp();
-}
+Object.create is like this function
+	function inherit(obj){
+		function Temp(){}
+		Temp.prototype = obj;
+		return new Temp();
+	}
 Circle.prototype = inherit(Shape.prototype);
 Circle.prototype.constructor = Circle;
 Circle.parent = Shape.prototype;
