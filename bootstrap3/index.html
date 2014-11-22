@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name = "viewpoint" content = "width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    
+<!-- CSS6: navigation -->
+    <nav class = "navbar navbar-inverse navbar-static-top" role = "navigation">
+        <div class = "container">
+            <!-- mobile display -->
+            <div class = "navbar-header">
+                <button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navbar_collapse_1">
+                    <span class = "sr-only">Toggle navigation</span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+                <a class = "navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- collect everything from toggling -->
+            <div class = "collapse navbar-collapse" id = "navbar_collapse_1">
+                <ul class = "nav navbar-nav">
+                    <li class = "active"><a href="#">Home<span class = "sr-only">(current)</span></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class = "dropdown">
+                        <a href = "#" class = "dropdown-toggle" type = "button" id = "nav_dropdown_1" data-toggle = "dropdown" aria-expanded = "false">
+                            Dropdown
+                            <span class = "caret"></span>
+                        </a>
+                        <ul class = "dropdown-menu " area-labelledby = "nav_dropdown_1">
+                            <li class = "dropdown-header">header1</li>
+                            <li><a href="#" tabindex = "-1">list1</a></li>
+                            <li><a href="#" tabindex = "-1">list2</a></li>
+                            <li class = "divider"></li>
+                            <li class = "dropdown-header">header2</li>
+                            <li class = "disabled"><a href="#" tabindex = "-1">list3</a></li>
+                            <li><a href="#" tabindex = "-1">list4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class = "navbar-form navbar-right" role = "search">
+                    <div class = "form-group">
+                        <input type = "text" class = "form-control" placeholder = "Search">
+                    </div>
+                    <button type = "submit" class = "btn btn-sm btn-default">Submit</button>
+                </form>
+            </div>  <!-- navbar collapse -->
+        </div>  <!-- navbar container -->
+    </nav>
+    
+<div class = "container">
+
+<!-- row 2: header -->
+
+    <header class = "row">
+    <!-- CSS8: pills -->
+        <div class = "col-md-3">
+            <ul class = "nav nav-pills nav-stacked">
+                <li class = "active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+    <!-- CSS7: Jumbotron -->
+        <div class = "col-md-8 col-md-offset-1">
+            <div class = "jumbotron">
+                <h1>Jumbotron</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p><a href="#" class = "btn btn-info btn-lg">Read More</a></p>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+<!-- row 3: article/aside -->
+
+    <div class = "row">
+    <!-- JS 1: collapse -->
+        <div class = "col-lg-4 col-sm-5">
+
+            <h4>Collapse : accordion</h4>
+
+            <div class = "panel-group" id = "accordion">
+                <!-- panel 1 -->
+                <div class = "panel panel-default">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                            <a href="#panel_title_1" data-toggle = "collapse" data-parent = "#accordion" class = "accordion-toggle">
+                                <span class="glyphicon glyphicon-pushpin"></span> pushpin
+                            </a>
+                        </h4>
+                    </div>
+                    <div id = "panel_title_1" class = "panel-collapse collapse in">
+                        <div class = "panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p><a href="#" class="btn btn-info">Read more >></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- panel 2 -->
+                <div class = "panel panel-default">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                            <a href="#panel_title_2" data-toggle = "collapse" data-parent = "#accordion" class = "accordion-toggle">
+                                <span class="glyphicon glyphicon-ok"></span> ok
+                            </a>
+                        </h4>
+                    </div>
+                    <div id = "panel_title_2" class = "panel-collapse collapse">
+                        <div class = "panel-body">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                            <p><a href="#" class="btn btn-info">Read more >></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- panel 3 -->
+                <div class = "panel panel-default">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                            <a href="#panel_title_3" data-toggle = "collapse" data-parent = "#accordion" class = "accordion-toggle">
+                                <span class="glyphicon glyphicon-heart"></span> heart
+                            </a>
+                        </h4>
+                    </div>
+                    <div id = "panel_title_3" class = "panel-collapse collapse">
+                        <div class = "panel-body">
+                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+                            <p><a href="#" class="btn btn-info">Read more >></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- panel 4 -->
+                <div class = "panel panel-default">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                            <a href="#panel_title_4" data-toggle = "collapse" data-parent = "#accordion" class = "accordion-toggle">
+                                <span class="glyphicon glyphicon-cutlery"></span> cutlery
+                            </a>
+                        </h4>
+                    </div>
+                    <div id = "panel_title_4" class = "panel-collapse collapse">
+                        <div class = "panel-body">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                            <p><a href="#" class="btn btn-info">Read more >></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- JS 2: tabs -->
+        <div class = "col-lg-8 col-sm-7">
+            <h4>Tabs</h4>
+            <!-- list navigation for tabs -->
+            <ul class = "nav nav-tabs" id = "myTab">
+                <li><a href="#tab_title_1" data-toggle = "tab"><span class="glyphicon glyphicon-pushpin"></span> pushpin</a></li>
+                <li><a href="#tab_title_2" data-toggle = "tab"><span class="glyphicon glyphicon-ok"></span> ok</a></li>
+                <li><a href="#tab_title_3" data-toggle = "tab"><span class="glyphicon glyphicon-heart"></span> heart</a></li>
+                <li><a href="#tab_title_4" data-toggle = "tab"><span class="glyphicon glyphicon-cutlery"></span> cutlery</a></li>
+            </ul>
+
+            <!-- text for each callout -->
+            <div class = "tab-content">
+                <div class = "tab-pane fade in active" id = "tab_title_1">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     <p><a href="#" class="btn btn-info">Read more >></a></p>
+                </div>
+
+                <div class = "tab-pane fade" id = "tab_title_2">
+                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                     <p><a href="#" class="btn btn-info">Read more >></a></p>
+                </div>
+
+                <div class = "tab-pane fade" id = "tab_title_3">
+                     <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+                     <p><a href="#" class="btn btn-info">Read more >></a></p>
+                </div>
+
+                <div class = "tab-pane fade" id = "tab_title_4">
+                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                     <p><a href="#" class="btn btn-info">Read more >></a></p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <hr>
+
+    <div class = "row">
+
+    <!-- CSS9: Thumbnail -->
+
+        <div class = "col-md-4 col-sm-6">
+            <div class = "thumbnail">
+                <img src = "img/rostock.jpg" alt = "...">
+                <div class = "caption">
+                    <h4>thumbnail</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p><a href="#" class = "btn btn-default">Read Me >></a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class = "col-md-4 col-sm-6">
+            <div class = "thumbnail">
+                <img src = "img/ship.jpg" alt = "...">
+                <div class = "caption">
+                    <h4>thumbnail</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p><a href="#" class = "btn btn-info">Read Me >></a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class = "col-md-4 col-sm-6">
+            <div class = "thumbnail">
+                <img src = "img/salat.jpg" alt = "...">
+                <div class = "caption">
+                    <h4>thumbnail</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p><a href="#" class = "btn btn-primary">Read Me >></a></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class = "row">
+    <!-- JS 3: tooltip -->
+        <div class = "col-md-2 col-xs-2">
+            <h4>Tooltip</h4>
+            <button class = "btn btn-default" data-toggle = "tooltip" data-placement = "right" title = "Have Fun">
+                Have fun
+            </button>
+        </div>
+    <!-- CSS 2: Breadcrumbs -->
+        <div class = "col-md-4 col-xs-4">
+            <h4>Breadcrumbs</h4>
+            <ul class = "breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+    <!-- CSS 3: Pagenation -->
+        <div class = "col-md-4 col-xs-4">
+            <h4>Pagination</h4>
+            <ul class = "pagination">
+                <li><a href="#"><span aria-hidden = "true"></span>&laquo;<span class = "sr-only">Prev</span></a></li>
+                <li class = "active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#"><span aria-hidden = "true"></span>&raquo;<span class = "sr-only">Next</span></a></li>
+            </ul>
+        </div>
+    <!-- CSS 4: Dropdown -->
+        <div class = "col-md-2 col-xs-2">
+            <h4>Dropdowns</h4>
+            <div class = "dropdown">
+                <button class = "btn btn-default dropdown-toggle" type = "button" id = "dropdown_1" data-toggle = "dropdown" aria-expanded = "true">
+                    Dropdown
+                    <span class = "caret"></span>
+                </button>
+                <ul class = "dropdown-menu " area-labelledby = "dropdown_1">
+                    <li class = "dropdown-header">header1</li>
+                    <li><a href="#" tabindex = "-1">list1</a></li>
+                    <li><a href="#" tabindex = "-1">list2</a></li>
+                    <li class = "divider"></li>
+                    <li class = "dropdown-header">header2</li>
+                    <li class = "disabled"><a href="#" tabindex = "-1">list3</a></li>
+                    <li><a href="#" tabindex = "-1">list4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class = "row">
+    <!-- CSS 5: buttons -->
+        <div class = "col-md-4 col-xs-4">
+            <h4>button groups</h4>
+            <div class = "btn-group">
+                <button type = "button" class = "btn btn-default">default</button>
+                <button type = "button" class = "btn btn-info">info</button>
+                <button type = "button" class = "btn btn-success">success <span class = "badge">2</span></button>
+                <button type = "button" class = "btn btn-primary">primary</button>
+                <button type = "button" class = "btn btn-warning">warning</button>
+                <button type = "button" class = "btn btn-danger">danger</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class = "row">
+    <!-- CSS 1: Typography -->
+        <div class = "col-sm-12">
+            <h4>Typography</h4>
+            <ul class = "nav nav-tabs" id = "typography">
+                <li><a href="#h" data-toggle = "tab">header</a></li>
+                <li><a href="#inline" data-toggle = "tab">inline</a></li>
+                <li><a href="#align" data-toggle = "tab">align</a></li>
+                <li><a href="#transformation" data-toggle = "tab">transformation</a></li>
+                <li><a href="#blockquotes" data-toggle = "tab">blockquotes</a></li>
+            </ul>
+
+            <!-- text for each callout -->
+            <div class = "tab-content">
+                <div class = "tab-pane fade in active" id = "h">
+                     <h1>Lorem ipsum dolor sit amet, <span class = "label label-default">Default</span></h1>
+                     <h2>Lorem ipsum dolor sit amet, <span class = "label label-primary">Primary</span></h2>
+                     <h3>Lorem ipsum dolor sit amet, <span class = "label label-success">Success</span></h3>
+                     <h4>Lorem ipsum dolor sit amet, <span class = "label label-info">Info</span></h4>
+                     <h5>Lorem ipsum dolor sit amet, <span class = "label label-warning">Warning</span></h5>
+                     <h6>Lorem ipsum dolor sit amet, <span class = "label label-danger">Danger</span></h6>
+                </div>
+
+                <div class = "tab-pane fade" id = "inline">
+                     <p>Lorem ipsum dolor <mark>sit</mark> amet,<span class = "badge">31</span></p>
+                     <p>Lorem ipsum dolor <em>sit</em> amet,</p>
+                     <p>Lorem ipsum dolor <strong>sit</strong> amet,</p>
+                     <p>Lorem ipsum dolor <u>sit</u> amet,</p>
+                     <p>Lorem ipsum dolor <small>sit</small> amet,</p>
+                     <p>Lorem ipsum dolor <ins>sit</ins> amet,</p>
+                     <p>Lorem ipsum dolor <del>sit</del> amet,</p>
+                     <p>Lorem ipsum dolor <s>sit</s> amet,</p>
+                     <p>Lorem ipsum dolor <abbr>sit</abbr> amet,</p>
+                </div>
+
+                <div class = "tab-pane fade" id = "align">
+                     <p class = "text-left">Lorem ipsum dolor sit amet,</p>
+                     <p class = "text-right">Lorem ipsum dolor sit amet,</p>
+                     <p class = "text-center">Lorem ipsum dolor sit amet,</p>
+                     <p class = "text-justify">Lorem ipsum dolor sit amet,</p>
+                </div>
+
+                <div class = "tab-pane fade" id = "transformation">
+                     <p class = "text-lowercase">Lorem ipsum dolor sit amet,</p>
+                     <p class = "text-uppercase">Lorem ipsum dolor sit amet,</p>
+                     <p class = "text-capitalize">Lorem ipsum dolor sit amet,</p>
+                </div>
+
+                <div class = "tab-pane fade" id = "blockquotes">
+                    <blockquote>
+                       <p>Lorem ipsum dolor sit amet,</p>  
+                    </blockquote>
+                    <blockquote class = "blockquote-reverse">
+                       <p>Lorem ipsum dolor sit amet,</p>  
+                    </blockquote>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+<!-- row 4: footer -->
+
+    <footer class = "row">
+
+    </footer>
+
+
+</div>  <!-- end container -->
+
+<!-- javascript -->
+<script type="text/javascript" src = "js/jquery.min.js"></script>
+<script type="text/javascript" src = "js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#myTab a:first').tab('show');
+        $('#typography a:first').tab('show');
+        $('[data-toggle = "tooltip"]').tooltip();
+   });
+</script>
+</body>
+</html>
