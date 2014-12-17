@@ -8,7 +8,7 @@
 		$needle = "Today i";
 		$find = "had";
 
-		// 5. modification
+		5. modification
 		echo str_shuffle($str);
 		echo "<br>";
 		echo md5(str_shuffle($str));
